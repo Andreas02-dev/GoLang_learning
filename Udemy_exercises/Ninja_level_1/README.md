@@ -1,0 +1,1 @@
+The ninja exercises 1 have not been made because they were too easy and it was a time-waster.
