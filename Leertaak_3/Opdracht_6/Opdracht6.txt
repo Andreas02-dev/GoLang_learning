@@ -1,0 +1,38 @@
+1. De tijd van vandaag weergeven (de log package is niet voldoende)
+2. Een willekeurig getal kan weergeven
+3. Een plaatje mee zou kunnen tekenen
+4. Een ander programma mee kan uitvoeren
+5. Bepaalde variabelen kunt archiveren door middel van ZIP
+
+1. Tijd van vandaag: package [time], function [Now].
+2. Willekeurig getal weergeven: package [rand], function [Int] ("math/int")
+3. Plaatje mee tekenen: package draw?
+4. Ander programma uitvoeren: package PE?
+5. Variabelen archiveren d.m.v. ZIP: package [zip] ("archive/zip")
+
+// Code:
+
+package main
+
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
+
+func main() {
+	// Print the current date and time using the standard mask:
+	fmt.Println(time.Now())
+	// Generate a new source using the current time:
+	source1 := rand.NewSource(time.Now().UnixNano())
+	// Generate a new rand entity with the source:
+	rand1 := rand.New(source1)
+	// Generate a random number:
+	randomNum := rand1.Intn(2)
+	// If the number is 0, print "kop", else print "munt":
+	if randomNum == 0 {
+		fmt.Println("kop")
+	} else {
+		fmt.Println("munt")
+	}
+}
