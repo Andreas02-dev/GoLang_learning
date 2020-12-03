@@ -78,7 +78,7 @@ func gemiddeldeNeerslag(array [7]int) int {
 }
 
 // meestVoorkomende takes an array of string7 and returns the entry which has the most entries.
-// It also returns a string array with the tied entries:
+// It also returns a string slice with the tied entries:
 func meestVoorkomende(array [7]string) (string, []string) {
 	// Create a map to store the value and count:
 	value := map[string]int{}
@@ -102,6 +102,6 @@ func meestVoorkomende(array [7]string) (string, []string) {
 			tied = append(tied, k)
 		}
 	}
-	// Return the string with the entry which has the most values and an array with the tied entries:
+	// Return the string with the entry which has the most values and a slice with the tied entries:
 	return meestVoorkomendeString, tied
 }
