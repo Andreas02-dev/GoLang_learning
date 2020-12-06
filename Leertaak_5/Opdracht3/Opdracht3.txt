@@ -1,0 +1,27 @@
+Bij deze opdracht was geen Go file nodig.
+De JSON tekst is bij "Leertaak_5.2_Buienradar_JSON.txt" te vinden.
+
+De uitwerking hiervan is als volgt:
+
+
+--Vraag: Waar in het data overzicht kun jij de buien informatie vinden voor het dichtsbijzijnde meetstation in Arnhem?
+	actual --> stationmeasurements --> 1
+--Vraag: Wat is de luchtvochtigheid in Arnhem? Wat is de windrichting in Arnhem?
+	Luchtvochtigheid: 99%
+	Windrichting: NNW
+--Vraag: En wat is de luchtvochtigheid en windrichting in De Bilt?
+	Luchtvochtigheid: 92%
+	Windrichting: NW
+--Vraag: Waar in het data overzicht kun jij de weersverwachting vinden voor de komende 5 dagen?
+	forecast --> fivedayforecast --> [0,1,2,3,4]
+--Vraag: Wat is de minimum en maximum temperatuur van vandaag?
+	Niet duidelijk te vinden.
+--Vraag: Wat is de minimum en maximum temperatuur voor morgen?
+	Minimum: 3 graden
+	Maximum: 5 graden
+--Vraag: Wat is de windkracht overmorgen?
+	Windkracht: 3
+--Vraag: Zou jij overmorgen een jas aandoen tegen de regen? Hoe ben jij tot deze conclusie gekomen op basis van de JSON data?
+	Nee, want de mmRainMin en mmRainMax zijn beide 0.
+--Vraag: Is het mogelijk om de data aan te passen in de online JSON encoded file? Waarom zou dit zo zijn?
+	Ja, het is niet schrijf-beveiligd of encrypted.
