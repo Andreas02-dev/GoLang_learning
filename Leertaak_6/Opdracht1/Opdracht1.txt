@@ -1,0 +1,39 @@
+Voor deze opdracht was geen Go source file nodig. Hieronder staat de uitwerking voor de opdracht.
+
+
+--Vraag: Wat is de rol van het Hyper Text Transfer Protocol (HTTP)?
+	HTTP is het protocol voor de communicatie tussen een webclient en een webserver.
+--Vraag: Wat is Hyper Text Markup Language (HTML) en waar wordt deze taal voor jou omgezet tot een mooie website?
+	Dit is de taal waarin de webclient en webserver informatie uitwisselen. Dit gebeurt in een webbrowser.
+--Vraag: Wat is een GET request? Wat is een response?
+	Een GET request vraagt informatie op aan de server. De response is het antwoord terug.
+--Vraag: Wie verstuurt een request? (client/server)
+	De client.
+--Vraag: Wie ontvangt een request? (client/server)
+	De server.
+--Vraag: Wie verstuurt een response? (client/server)
+	De server
+--Vraag: Wie ontvangt een response? (client/server)
+	De client.
+--Vraag: Uit hoeveel requests bestaan de volgende webpagina's, en geef daarbij de gebruikte HTTP method weer:
+--Een webpagina met een cursieve titel en twee paragrafen.
+	1 GET
+-Een webpagina met twee plaatjes, een tabel en een video.
+	4 GETS
+--Een webpagina met tekst, een formulier en een doorlinkknop.
+	1 GET en mogelijk 1 GET voor de doorlinkknop, wanneer men hierop klikt.
+--Een webpagina na het inloggen met een tekst die de gebruiker verwelkomt.
+	1 GET voor de pagina zelf. Hieraan vooraf ging een POST door de client met de inloggegevens.
+
+
+--Vraag: Welke rol spelen cookies bij het inloggen op een website?
+	Deze onthouden de clientId zodat de volgende keer niet opnieuw ingelogd hoeft te worden.
+--Vraag: Noem 4 typische client omgevingen?
+	PC, telefoon, laptop, tablet.
+--Vraag: Geef aan voor de volgende gevallen met welke HTTP method deze waarschijnlijk worden uitgevoerd:
+--Als jij een nieuwe tweet plaatst, met welke HTTP Method wordt dit dan gedaan?
+	POST
+--Waneer ik mijn nieuwe Instagram posts inlaad, met welke HTTP Method wordt dit dan gedaan?
+	GET
+--Wanneer ik naar de login-pagina browse van Tweakers, met welke HTTP Method wordt dit dan gedaan?
+	GET
