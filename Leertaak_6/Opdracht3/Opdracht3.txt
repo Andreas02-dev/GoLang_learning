@@ -1,0 +1,15 @@
+--Vraag: Wat doet de package net/http?
+	Het kan gebruikt worden om HTTP-server-clients op te zetten.
+--Vraag: Wat gebeurt er op regel 9?
+	De webpagina /welkom wordt aangeroepen en afgehandeld door handleWelkom.
+--Vraag: Wat gebeurt er op regel 11?
+	Het programma luistert nu naar de :8080 localhost poort en roept Serve met een handler aan.
+--Vraag: Waarom krijg jij twee parameters bij de functie handleWelkom?
+	HandleFunc geeft de request door en de response terug.
+--Vraag: Wat doet de package html/template?
+	Deze zorgt ervoor dat een html template gelezen kan worden.
+--Vraag: Wat gebeurt er op regel 15?
+	Er wordt een render gemaakt van de html template "welkom.html"
+Sluit het proces in je command prompt en ga terug naar je website (CTRL + C).
+--Vraag: Wat gebeurt er als jij dit uitvoert?
+	Niets, totdat de webpagina herladen wordt.
