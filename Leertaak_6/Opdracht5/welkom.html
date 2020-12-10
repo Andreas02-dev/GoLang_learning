@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <h1>{{.Name}}</h1>
+    <br>
+    <p1>{{.Role}}</p1>
+    <br>
+    <br>
+    <br>
+    <img src="images/Archer_jpg.jpg" alt="An archer" style="width:820px;height:1614px"></img>
+    <br>
+    <br>
+    <br>
+    <p1>Techniques</p1><br>
+    <ul>
+    {{range .Techniques}}
+        <li>{{.}}</li>
+    {{end}}
+    </ul>
+    <a href="https://www.linguee.com/english-dutch/translation/fooled.html">GitHub</a>
+</html>
