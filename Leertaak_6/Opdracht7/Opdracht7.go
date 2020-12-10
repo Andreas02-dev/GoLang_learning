@@ -22,11 +22,14 @@ func handleAanbevelingen(response http.ResponseWriter, request *http.Request) {
 	render.Execute(response, nil)
 }
 
+// handleNieuwe parses the form and logs it:
 func handleNieuweAanbeveling(response http.ResponseWriter, request *http.Request) {
+	// Parse the form:
 	err := request.ParseForm()
 	if err != nil {
 		log.Println(err)
 	}
+	// Log the parsed values:
 	log.Println(request.FormValue("name"))
 	log.Println(request.FormValue("email"))
 	log.Println(request.FormValue("comment"))
