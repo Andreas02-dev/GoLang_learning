@@ -1,0 +1,29 @@
+--Vraag: Waarom is volgens dit artikel documenteren belangrijk?
+	Documenteren is bijvoorbeeld belangrijk om ervoor te zorgen dat code beter te onderhouden is.
+--Vraag: Wat is Godoc en wat doet het?
+	Godoc is een tool waarmee eenvoudig documentatie uit Go source files gehaald kan worden, met name vanuit de comments.
+--Vraag: Bij het documenteren van types, variabelen, constanten, functie's en packages moet je letten op bepaalde conventie's, welke zijn dat?
+	De comments moeten beginnen met de naam van hetgeen wat je wilt documenteren.
+--Vraag: Wat is er bijzonder aan de eerste zin commentaar bij het gebruik van godoc?
+	Het begint altijd met de naam van bijvoorbeeld de variabele of de functie.
+--Vraag: Wanneer gebruik je de tekst "Deprecated:" in de Go programming language?
+	Wanneer dit verouderd is en er een beter alternatief is, maar dit in de package blijft staan voor compatibaliteitsredenen.
+--Vraag: Mag bij een oud stuk code altijd de tekst "Deprecated:" geplaatst worden?
+	Nee, alleen als er een (beter) alternatief voor is.
+--Vraag: Moet je voor elke regel code een stuk documentatie schrijven? Zo ja, waarom? Zo nee, waarom niet?
+	Nee, het is wel belangrijk dat er genoeg documentatie is maar te veel is natuurlijk niet per sé nodig.
+	Code 1:
+		Fout: Er wordt gebruikt gemaakt van multi-line comments.
+		Alternatief: Hetzelfde maar dan met single-line comments (//).
+	Code 2:
+		Fout: De documentatie is te globaal.
+		Alternatief: Comments bij elke for en if statement zetten.
+	Code 3:
+		Fout: Er wordt niet begonnen met de functie-naam (PrintBord). 
+		Alternatief: Beginnen met PrintBord en vervolgens de rest in de comment schrijven.
+	Code 4:
+		Fout: Comments moeten beschrijven hoe de functie werkt, niet hoeveel tijd je erin hebt gestopt.
+		Alternatief: Alles over je bloed, zweet en tranen deleten.
+	Code 5:
+		Fout: "Deze functie is onderdeel van package boterkaaseneieren" hoeft hier niet bijgezet te worden.
+		Alternatief: Dit deel deleten.
